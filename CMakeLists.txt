@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.22.0)
+
+project(ELIMINATE-VIRTUAL
+  LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 23)
+
+file(GLOB DEMO_SOURCES ${CMAKE_SOURCE_DIR}/*.cpp)
+add_library(demo STATIC ${DEMO_SOURCES})
